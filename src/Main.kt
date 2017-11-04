@@ -10,4 +10,9 @@ fun main(args: Array<String>) {
     println("Hello, ${roman.FirstName} ${roman.LastName}, birthdate: ${roman.BirthDate}!")
 
     roman.display()
+    roman.displayWithLambda(::printName)
+}
+
+fun printName(name: String){
+    println(name)
 }

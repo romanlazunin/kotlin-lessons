@@ -8,4 +8,9 @@ class Person(
     fun display(){
         println("First name: $FirstName\nLast name: $LastName\nDate of birth: $BirthDate")
     }
+
+    fun displayWithLambda( func: (s:String) -> Unit){
+        func(FirstName)
+    }
+
 }
